@@ -4,9 +4,21 @@ using COMP123_S2016_Lesson1B;
 
 namespace Lesson1TestProject
 {
+    /**
+     * This class is used to test methods
+     * Used for development only.
+     * 
+     * @class Lesson1UnitTest
+     */
     [TestClass]
     public class Lesson1UnitTest
     {
+
+        /**
+         * Unit Test for OutputStringtoConsole Method of the Program class
+         * 
+         * @method OutputStringToConsoleTestMethod
+         */
         [TestMethod]
         public void OutputStringToConsoleTestMethod()
         {
@@ -14,7 +26,7 @@ namespace Lesson1TestProject
             string outputString = "Enter UserName: ";
             bool hasNewLine = false;
             string actualResult;
-            string expectedResult = "Enter Name: ";
+            string expectedResult = "Enter UserName: ";
 
             // Act
             actualResult = Program.OutputStringToConsole(outputString, hasNewLine);
